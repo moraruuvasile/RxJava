@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 .flatMap(new Function<Post, ObservableSource<Post>>() {
                     @Override
                     public ObservableSource<Post> apply(Post post) throws Exception {
-                        return getCommentsObservable(post);
+                       return getCommentsObservable(post);
                     }
                 })
                 .observeOn(AndroidSchedulers.mainThread())
